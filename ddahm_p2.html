@@ -2,160 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My First Web Page</title>
+    <title>Survey – Page 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="stylesheet.css" />
-    <script
-      src="https://kit.fontawesome.com/20d97a8b6f.js"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      .fontawesome {
-        font-size: 1.15rem;
-        color: #333333;
-      }
-
-      .tooltip {
-        position: relative;
-        display: inline-block;
-      }
-
-      .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 200px;
-        background-color: #333333;
-        color: #f8f8f8;
-        font-size: 1.15rem;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        border-radius: 6px;
-        padding: 15px;
-
-        /* Position the tooltip text */
-        position: absolute;
-        z-index: 1;
-        top: 100%;
-        left: 50%;
-        margin-left: -100px;
-      }
-
-      .tooltip:hover .tooltiptext {
-        visibility: visible;
-      }
-    </style>
   </head>
+
   <body class="container mt-5">
     <h1>Survey Page 2</h1>
-    <p>Choose your year and completed BAIS classes.</p>
+    <p>Please complete your year status and course info.</p>
 
-    <form action="hawkid_ty.html" method="get">
-      <div class="mb-3">
+    <form action="ddahm_ty.html" method="get">
+      <div class="mb-4">
         <p>I am finishing my:</p>
         <div class="form-check">
           <input
-            class="form-check-input"
             type="radio"
+            id="year1"
             name="year"
-            value="1"
+            class="form-check-input"
             required
           />
-          First Year at Iowa
+          <label for="year1" class="form-check-label">First Year</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="year" value="2" />
-          Second Year at Iowa
+          <input type="radio" id="year2" name="year" class="form-check-input" />
+          <label for="year2" class="form-check-label"> Second Year </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="year" value="3" />
-          Third Year at Iowa
+          <input type="radio" id="year3" name="year" class="form-check-input" />
+          <label for="year3" class="form-check-label"> Third Year </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="year" value="4" />
-          Fourth Year at Iowa
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="year" value="5" />
-          Fifth+ Year at Iowa
+          <input type="radio" id="year4" name="year" class="form-check-input" />
+          <label for="year4" class="form-check-label"> Fourth Year</label>
         </div>
       </div>
 
-      <div class="mb-3">
+      <div class="mb-4">
         <p>BAIS Core Classes Completed:</p>
         <div class="form-check">
           <input
-            class="form-check-input"
             type="checkbox"
-            name="course[]"
-            value="IS"
+            id="info"
+            name="course"
+            class="form-check-input"
           />
-          Information Systems
+          <label for="info" class="form-check-label">
+            Information Systems</label
+          >
         </div>
         <div class="form-check">
           <input
-            class="form-check-input"
             type="checkbox"
-            name="course[]"
-            value="Ops"
+            id="ops"
+            name="course"
+            class="form-check-input"
           />
-          Operations
+          <label for="ops" class="form-check-label"> Operations </label>
         </div>
         <div class="form-check">
           <input
-            class="form-check-input"
             type="checkbox"
-            name="course[]"
-            value="BA"
-          />
-          Foundations of Business Analytics
-        </div>
-        <div class="form-check">
-          <input
+            id="analytics"
+            name="course"
             class="form-check-input"
-            type="checkbox"
-            name="course[]"
-            value="CompThink"
           />
-          Computational Thinking
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            name="course[]"
-            value="DBM"
-          />
-          Database Management
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            name="course[]"
-            value="DM"
-          />
-          Data Mining
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            name="course[]"
-            value="DR"
-          />
-          Data Wrangling
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            name="course[]"
-            value="BAIS"
-          />
-          BAIS Capstone
+          <label for="analytics" class="form-check-label">
+            Business Analytics</label
+          >
         </div>
       </div>
 
