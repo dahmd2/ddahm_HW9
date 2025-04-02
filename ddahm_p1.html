@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      .tooltip {
+      .tool-tip {
         color: blue;
         font-size: 1.15rem;
         position: relative;
@@ -22,7 +22,7 @@
         cursor: pointer;
       }
 
-      .tooltiptext {
+      .tool-tip-text {
         visibility: hidden;
         width: 200px;
         background-color: #333333;
@@ -39,7 +39,7 @@
         margin-left: -100px;
       }
 
-      .tooltip:hover .tooltiptext {
+      .tool-tip:hover .tool-tip-text {
         visibility: visible;
       }
     </style>
@@ -64,8 +64,8 @@
 
       <div class="mb-3">
         <label for="town" class="form-label">
-          My home town is
-          <span class="tooltip">
+          My home town is:
+          <span class="tool-tip">
             <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
 
             <span class="tool-tip-text">
